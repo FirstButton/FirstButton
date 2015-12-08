@@ -1,0 +1,10 @@
+C:\Users\DYWin7_2\Documents\FirstButton\Communication\source_code_VS2010\bin\sombreros.exe
+C:\Users\DYWin7_2\Documents\FirstButton\Communication\source_code_VS2010\bin\sombreros.pdb
+C:\Users\DYWin7_2\Documents\FirstButton\Communication\source_code_VS2010\bin\sombreros.xml
+C:\Users\DYWin7_2\Documents\FirstButton\Communication\source_code_VS2010\obj\Debug\sombreros.Resources.resources
+C:\Users\DYWin7_2\Documents\FirstButton\Communication\source_code_VS2010\obj\Debug\sombreros.tgt_inst.resources
+C:\Users\DYWin7_2\Documents\FirstButton\Communication\source_code_VS2010\obj\Debug\sombreros.tgt_license.resources
+C:\Users\DYWin7_2\Documents\FirstButton\Communication\source_code_VS2010\obj\Debug\logoinst.vbproj.GenerateResource.Cache
+C:\Users\DYWin7_2\Documents\FirstButton\Communication\source_code_VS2010\obj\Debug\sombreros.exe
+C:\Users\DYWin7_2\Documents\FirstButton\Communication\source_code_VS2010\obj\Debug\sombreros.xml
+C:\Users\DYWin7_2\Documents\FirstButton\Communication\source_code_VS2010\obj\Debug\sombreros.pdb
