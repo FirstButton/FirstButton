@@ -1,8 +1,0 @@
-C:\Users\D\Documents\firstbutton\Product\clients\logoinst_IE9_RC\obj\Release\sombreros.exe
-C:\Users\D\Documents\firstbutton\Product\clients\logoinst_IE9_RC\obj\Release\sombreros.xml
-C:\Users\D\Documents\firstbutton\Product\clients\logoinst_IE9_RC\bin\sombreros.exe
-C:\Users\D\Documents\firstbutton\Product\clients\logoinst_IE9_RC\bin\sombreros.xml
-C:\Users\D\Documents\firstbutton\Product\clients\logoinst_IE9_RC\obj\Release\sombreros.Resources.resources
-C:\Users\D\Documents\firstbutton\Product\clients\logoinst_IE9_RC\obj\Release\sombreros.tgt_inst.resources
-C:\Users\D\Documents\firstbutton\Product\clients\logoinst_IE9_RC\obj\Release\sombreros.tgt_license.resources
-C:\Users\D\Documents\firstbutton\Product\clients\logoinst_IE9_RC\obj\Release\logoinst.vbproj.GenerateResource.Cache
