@@ -30,4 +30,4 @@ This version is recommended, for eliminating the Windows Compatibility warning t
 For updates, please visit www.liquiditylighthouse.com .
 
 
-(c) 2013 - 2015 Liquidity Lighthouse, LLC.
+(c) 2013 - 2017 Liquidity Lighthouse, LLC.
