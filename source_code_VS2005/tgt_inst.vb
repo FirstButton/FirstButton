@@ -3,6 +3,7 @@ Option Explicit On
 Imports Microsoft.Win32
 Imports VB = Microsoft.VisualBasic
 Imports System.Collections
+Imports Microsoft.VisualBasic.FileIO.SpecialDirectories            '12-28-2017'
 
 Friend Class tgt_inst
     Inherits System.Windows.Forms.Form
@@ -18,7 +19,7 @@ Friend Class tgt_inst
 ' THIS PROGRAM IS CONFIDENTIAL AND PROPRIETARY TO LIQUIDITY LIGHTHOUSE, LLC                 '
 '  AND MAY NOT BE REPRODUCED, PUBLISHED, OR DISCLOSED TO OTHERS WITHOUT                     '
 '   COMPANY AUTHORIZATION.                                                                  '
-' COPYRIGHT © 2010-2015  LIQUIDITY LIGHTHOUSE, LLC. ALL RIGHTS RESERVED.                    '
+' COPYRIGHT © 2010-2015, 2018  LIQUIDITY LIGHTHOUSE, LLC. ALL RIGHTS RESERVED.              '
 ' PORTIONS ARE CONVERTED FROM CODE THAT IS COPYRIGHT © 2005-2010  LIQUIDITY LIGHTHOUSE, LLC.'
 '-------------------------------------------------------------------------------------------'
 'This file is part of FirstButton.                                                          '
@@ -48,6 +49,7 @@ Dim logo_cmdvalue_obj As Object
 Dim svaluename As String
 Dim skeyname As String
 Public logo_install_directory As String
+Public logo_my_documents As String         '12-28-2017'
 Dim logo_new_guid As String
 Dim logo_new_guid_2 As String
 Dim logo_brand_name As String
@@ -1888,6 +1890,11 @@ Private Sub locate_favorites()
       End If
   End If
   logo_system_dir = logo_string_filename & "\system"
+End Sub
+Private Sub get_documents_location()
+'12-28-2017'
+  logo_my_documents = My.Computer.FileSystem.SpecialDirectories.MyDocuments     '12-28-2017'
+  'MsgBox(logo_my_documents)'
 End Sub
 Private Sub get_programs_location()
   Dim lretval As Integer
@@ -5719,17 +5726,26 @@ Private Sub install_reg_entries()
   logo_nextid_spread_changed = False               '01/27/2011'
   locate_favorites()
   get_programs_location()
+  get_documents_location()                         '12-28-2017'
   logo_auth_copy_system = False
   logo_auth_copy_programs = False
   logo_source_not_found = False
   logo_nextid_missing_flag = False
-  logo_exe_path = Application.ExecutablePath()    '08/30/2011'
-  logo_source_file = logo_exe_path                '08/03/2011'
-  If VB.Right(logo_system_dir, 1) = "\" Then
-      logo_dest_file = logo_system_dir & logo_install_module
+  logo_exe_path = Application.ExecutablePath()     '08/30/2011'
+  logo_source_file = logo_exe_path                 '08/03/2011'
+
+  If VB.Right(logo_my_documents, 1) = "\" Then
+      logo_dest_file = logo_my_documents & logo_install_module
   Else
-      logo_dest_file = logo_system_dir & "\" & logo_install_module
+      logo_dest_file = logo_my_documents & "\" & logo_install_module
   End If
+'12-28-2017 - commented out copy to system library'
+  'If VB.Right(logo_system_dir, 1) = "\" Then
+  '    logo_dest_file = logo_system_dir & logo_install_module
+  'Else
+  '    logo_dest_file = logo_system_dir & "\" & logo_install_module
+  'End If
+
   Try
       System.IO.File.Copy(logo_source_file, logo_dest_file, True)
   Catch
@@ -5747,7 +5763,8 @@ Private Sub install_reg_entries()
       End If
   Else
       logo_source_not_found = False
-      logo_app_path = logo_system_dir
+'      logo_app_path = logo_system_dir       - 12-28-2017'
+      logo_app_path = logo_my_documents       '12-28-2017'
       GoTo install_fav_entry
   End If
   Err.Clear()
