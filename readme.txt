@@ -4,15 +4,10 @@ This Zip file contains:
 
 \source_code_VS2010\ - folder with all source code files, compatible with Visual Studio 2010
 
-fdl.html - Free Software Foundation license for documentation
-
 FirstButton Documentation.pdf  - covers the parameters that are compiled into
  FirstButton for determining the installation position on the Toolbar for the button, etc.
 
 overview_chart.pdf  - structure chart of the FirstButton installation and uninstallation processing.
-
-gpl.odt  gpl.pdf  gpl.txt  - GNU General Public License - license under which FirstButton is being distributed.
- Please read carefully before incorporating FirstButton into any products that you plan on distributing.
 
 sombreros.exe - sample version of FirstButton, which will install a sombrero-shaped button in the 3rd position 
  on the Internet Explorer toolbar. (Unless there are non-Microsoft buttons to the left of that, in which case
@@ -28,4 +23,4 @@ This version is recommended, for eliminating the Windows Compatibility warning t
 For updates, please visit www.liquiditylighthouse.com .
 
 
-(c) 2013 - 2018 Liquidity Lighthouse, LLC.
+(c) 2013 - 2018, 2019 Liquidity Lighthouse, LLC.
