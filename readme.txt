@@ -22,5 +22,6 @@ This version is recommended, for eliminating the Windows Compatibility warning t
 ================================================================================================================
 For updates, please visit https://firstbutton.com .
 
-
 (c) 2013 - 2018, 2019, 2020 Liquidity Lighthouse, LLC.
+
+Questions can be sent to documents@liquiditylighthouse.com .
