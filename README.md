@@ -19,7 +19,6 @@ Please note that sombreros.exe was built using Visual Studio 2010.
 This version is recommended, for eliminating the Windows Compatibility warning that can result
  from not having Windows Vista, 7, 8, 8.1, and Windows 10 listed in the app.manifest file.
 
-================================================================================================================
 For updates, please visit https://firstbutton.com .
 
 (c) 2013 - 2018, 2019, 2020 Liquidity Lighthouse, LLC.
