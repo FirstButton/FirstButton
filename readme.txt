@@ -1,4 +1,4 @@
-This Zip file contains:
+This Repository contains:
 -------------------------
 \source_code_VS2005\ - folder with all source code files, compatible with Visual Studio 2005
 
